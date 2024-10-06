@@ -16,8 +16,8 @@ Key Features:
 - [Dataset](#dataset)
 - [Features](#features)
 - [How to Run the Project](#how-to-run-the-project)
-- [Usage](#usage)
-- [License](#license)
+- [Acknowledgments](#acknowledgments)
+  
 
 ## Technologies Used
 
