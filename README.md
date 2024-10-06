@@ -1,6 +1,14 @@
 # Movie Recommendation System
 
-This project implements a movie recommendation system using a dataset of movies and their associated metadata. The system leverages Natural Language Processing (NLP) techniques to analyze movie features such as genres, keywords, cast, crew, and overview to provide recommendations based on user input.
+This project is a content-based movie recommendation system built with machine learning and deployed via Streamlit. It uses metadata (genres, keywords, cast, crew, and plot overview) from TMDB to recommend movies based on similarity to a selected movie.
+
+Key Features:
+- Content-Based Filtering: Movies are represented as vectors using their metadata. A cosine similarity matrix is computed to recommend movies with 
+  similar features.
+- NLP Processing: Text data is processed using NLTK for tokenization and stemming, enabling effective feature extraction for similarity calculations.
+- API Integration: Fetches additional movie details (ratings, release date, posters) using an external movie database API.
+- Interactive Web App: The system is deployed on Streamlit, allowing users to input a movie title and receive recommendations with rich details.
+
 
 ## Table of Contents
 
@@ -50,11 +58,18 @@ The datasets can be found on [Kaggle: The Movies Dataset](https://www.kaggle.com
    
 2. Download the datasets from Kaggle and place them in the project directory.
 
-3. Run the main Python script:
+3. Install the required packages:
+   ```bash
+   pip install -r requirements.txt 
 
-```bash
-streamlit run app.py
-```
+4. Run the main Python script:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+5. Open your web browser and go to http://localhost:8501 to access the application.
+
 
 ## Acknowledgments
 The datasets used in this project are from The Movie Database (TMDB).
