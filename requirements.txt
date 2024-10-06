@@ -1,0 +1,8 @@
+streamlit
+numpy
+pandas
+scikit-learn
+nltk
+ast
+pickle5
+requests  # For hitting an API to fetch additional movie information
